@@ -1,0 +1,21 @@
+{
+  "name": "zeit-mongodb-rest-api",
+  "version": "1.0.0",
+  "description": "Serverless REST API for MongoDB",
+  "license": "MIT",
+  "author": "Meet Dave",
+  "scripts": {
+    "dev": "tsc -w",
+    "start": "tsc"
+  },
+  "dependencies": {
+    "mongodb": "^3.5.5", 
+    "url": "0.11.0"
+  },
+  "devDependencies": {
+    "typescript": "3.4.3",
+    "@types/mongodb": "^3.5.5",
+    "@types/node": "^13.11.1",
+    "@now/node": "^1.5.0"
+  }
+}

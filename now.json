@@ -1,0 +1,17 @@
+{
+  "name": "zeit-mongodb-rest-api",
+  "version": 2,
+  "env": {
+    "MONGODB_URI": "@mongodb-uri",
+    "USERNAME": "@username",
+    "PASSWORD": "@password"
+  },
+  "routes": [
+    { 
+      "src": "/api/index", 
+      "methods": ["GET", "PUT", "POST", "DELETE"],
+      "dest": "/api/index.js" 
+    }
+  ],
+  "builds": [{ "src": "api/*.js", "use": "@now/node" }]
+}
