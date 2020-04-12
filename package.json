@@ -1,7 +1,7 @@
 {
   "name": "zeit-mongodb-rest-api",
   "version": "1.0.0",
-  "description": "Serverless REST API for MongoDB",
+  "description": "Serverless REST API in Node.js with Zeit Now",
   "license": "MIT",
   "author": "Meet Dave",
   "scripts": {
