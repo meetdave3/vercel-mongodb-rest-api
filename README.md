@@ -21,11 +21,10 @@
   + username
   + password
 
-+ For development, run ***yarn dev*** and ***now dev*** seperately. 
-  + Any changes inside the /src folder will compile the output to /api folder. 
-  + **Now** listens to the changes in /api folder and rebuilds the serverless functions.
++ Running locally:  ***now dev*** 
+  + Any changes inside the /src folder will rebuild the serverless functions. 
 
-+ For production deployment, run **now**
++ For production deployment: **now**
 
 ### REST API Examples
 + **GET**: *Returns all the documents for any given collection*

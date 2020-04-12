@@ -4,10 +4,6 @@
   "description": "Serverless REST API in Node.js with Zeit Now",
   "license": "MIT",
   "author": "Meet Dave",
-  "scripts": {
-    "dev": "tsc -w",
-    "start": "tsc"
-  },
   "dependencies": {
     "mongodb": "^3.5.5", 
     "url": "0.11.0"

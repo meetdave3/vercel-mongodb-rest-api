@@ -10,8 +10,8 @@
     { 
       "src": "/api/index", 
       "methods": ["GET", "PUT", "POST", "DELETE"],
-      "dest": "/api/index.js" 
+      "dest": "/api/index.ts" 
     }
   ],
-  "builds": [{ "src": "api/*.js", "use": "@now/node" }]
+  "builds": [{ "src": "api/*.ts", "use": "@now/node" }]
 }
