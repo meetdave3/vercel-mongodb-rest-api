@@ -3,17 +3,17 @@
 #### Serverless REST API in Node.js with Zeit Now
 
 ### Support
++ You will need the Now CLI to run this project. (Refer: https://zeit.co/download)
 + Currently the API supports GET, PUT, POST, DELETE methods on `/api/index`.
 + With the help of these 4 endpoints, CRUD operations can be performed on any given Mongodb database collection.
-+ The REST API, by default, is protected with **Basic Authentication** (HTTP header where we add 'username:password' encoded in base64.)
-+ mongodb_uri, username & password must be added to the secrets / env variables. (Refer: https://zeit.co/docs/v2/build-step#adding-secrets).
++ The REST API, is protected with **Basic Authentication** (HTTP header where 'username:password' is encoded in base64.)
++ Secrets must be added to the secrets & env variables before starting off. (Refer: https://zeit.co/docs/v2/build-step#adding-secrets).
 + The HTTP header auth username & password is matched to the username and password provided in the secrets.
-+ You will need the Now CLI to run this project. (Refer: https://zeit.co/download)
 
 ### Usage
 + To get started you will need 
   + MongoDB connection uri to connect to your database.
-  + username and password (defined in the secrets). This is used to authenticate the REST API requests.
+  + username and password (pre-defined in the secrets). This is used to authenticate all incoming API requests.
 
 + Install the dependencies ***yarn***
 
@@ -23,9 +23,9 @@
   + password
 
 + Running locally:  ***now dev*** 
-  + Any changes inside the /src folder will rebuild the serverless functions. 
+  + Any changes inside the /src folder will rebuild the serverless functions.
 
-+ For production deployment: **now**
++ For production deployment, run: ***now***
 
 ### REST API Examples
 + **GET**: *Returns all the documents for any given collection*
@@ -91,11 +91,11 @@
 
 ### Inspiration
 
-Since I've been using Zeit for frontend deployments, I wanted an equally faster way to setup database CRUD operations with a predefined Mongodb database. Spin up a free Mongodb cluster here https://www.mongodb.com/download-center/cloud
+Since I've been using Zeit for frontend deployments, I wanted an equally faster way to setup database CRUD operations with a predefined Mongodb database. (Get a free Mongodb cluster here: https://www.mongodb.com/download-center/cloud)
 
-Personally, I didn't want to create models /  services / controllers / serverless API endpoints based on the database model everytime I start a new project. This setup should be ideal for a minimum viable product or proof of concept. 
+Personally, I didn't want to create models /  services / controllers / serverless API endpoints based on the database model everytime I start a new project. This setup should be ideal for a minimum viable product or a proof of concept.
 
-Therefore, this solution is a secure, quicker and scalable way of managing and deploying backend with Zeit.
+Therefore, this solution is a secure, quicker and scalable way of managing and deploying database functions with Zeit.
 
 ### License
 MIT
