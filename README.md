@@ -6,15 +6,15 @@
 + Currently the API supports GET, PUT, POST, DELETE methods on `/api/index`.
 + With the help of these 4 endpoints, CRUD operations can be performed on any given Mongodb database collection.
 + The REST API, by default, is protected with **Basic Authentication** (HTTP header where we add 'username:password' encoded in base64.)
-+ You can add the username & password to the secrets. (Refer: https://zeit.co/docs/v2/build-step#adding-secrets).
-+ The HTTP header username & password is matched to the username and password you have provide in the secrets.
++ mongodb_uri, username & password must be added to the secrets / env variables. (Refer: https://zeit.co/docs/v2/build-step#adding-secrets).
++ The HTTP header auth username & password is matched to the username and password provided in the secrets.
 
 ### Usage
 + To get started you will need 
   + MongoDB connection uri to connect to your database.
-  + username and password (defined by you). This is used to REST API requests authentication.
+  + username and password (defined in the secrets). This is used to authenticate the REST API requests.
 
-+ Once done cloning / forking the repo, Install the dependencies ***yarn***
++ Install the dependencies ***yarn***
 
 + Add the secrets
   + mongodb_uri
