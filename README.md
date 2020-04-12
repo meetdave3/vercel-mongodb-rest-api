@@ -8,6 +8,7 @@
 + The REST API, by default, is protected with **Basic Authentication** (HTTP header where we add 'username:password' encoded in base64.)
 + mongodb_uri, username & password must be added to the secrets / env variables. (Refer: https://zeit.co/docs/v2/build-step#adding-secrets).
 + The HTTP header auth username & password is matched to the username and password provided in the secrets.
++ You will need the Now CLI to run this project. (Refer: https://zeit.co/download)
 
 ### Usage
 + To get started you will need 
@@ -87,6 +88,14 @@
       }
     }'
   ```
+
+### Inspiration
+
+Since I've been using Zeit for frontend deployments, I wanted an equally faster way to setup database CRUD operations with a predefined Mongodb database. Spin up a free Mongodb cluster here https://www.mongodb.com/download-center/cloud
+
+Personally, I didn't want to create models /  services / controllers / serverless API endpoints based on the database model everytime I start a new project. This setup should be ideal for a minimum viable product or proof of concept. 
+
+Therefore, this solution is a secure, quicker and scalable way of managing and deploying backend with Zeit.
 
 ### License
 MIT
